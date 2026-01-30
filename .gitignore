@@ -1,0 +1,12 @@
+# Server log files
+logs/
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+
+# Environment variable files
+.env.development
+.env.production
