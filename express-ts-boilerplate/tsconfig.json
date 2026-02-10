@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2020",
+    "lib": ["ES2020"],
+    "experimentalDecorators": true /* Enable decorators for class-validator and sequelize-typescript */,
+    "emitDecoratorMetadata": true /* Enable metadata reflection for decorators */,
+    /* Modules */
+    "module": "commonjs",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "baseUrl": "./src" /* Base directory for path resolution */,
+    "paths": {
+      /* Path aliases for cleaner imports */
+      "@/*": ["src/*"],
+      "@config/*": ["config/*"],
+      "@database/*": ["database/*"],
+      "@modules/*": ["modules/*"],
+      "@common/*": ["common/*"],
+      "@middleware/*": ["middleware/*"],
+      "@types/*": ["types/*"]
+    },
+    "resolveJsonModule": true,
+    /* Emit */
+    "outDir": "./dist",
+    "removeComments": true,
+    "sourceMap": true /* Enable source maps for debugging */,
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    /* Type Checking */
+    "strict": true /* Enable all strict type checking options */,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false /* Disabled for Sequelize models */,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
